@@ -28,7 +28,7 @@
 
         <provider
             android:name=".data.NoteProvider"
-            android:authorities="com.afrikcode.android.noteskeepingapp"
+            android:authorities="com.afrikcode.alccodechallenge"
             android:exported="false" />
 
 
