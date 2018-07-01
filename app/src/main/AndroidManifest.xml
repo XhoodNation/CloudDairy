@@ -6,15 +6,52 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NotesActivity">
+        <activity
+            android:name=".NotesActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditorActivity"
+            android:parentActivityName=".NotesActivity"
+            android:theme="@style/EditorTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NotesActivity" />
+        </activity>
+
+        <provider
+            android:name=".data.NoteProvider"
+            android:authorities="com.afrikcode.android.noteskeepingapp"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".AuthActivity"
+            android:label="@string/auth_label">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NotesActivity" />
+        </activity>
+        <activity
+            android:name=".CloudActivity"
+            android:label="@string/cloud_activity_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NotesActivity" />
+        </activity>
+        <activity
+            android:name=".ReadActivity"
+            android:label="@string/activity_note_reader">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CloudActivity" />
         </activity>
     </application>
 
