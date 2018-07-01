@@ -24,10 +24,15 @@
     <string name="cloud_activity_title">Cloud Notes</string>
     <string name="auth_label">Sign In</string>
     <string name="activity_note_reader">Reader</string>
-    <string name="welcome_message">Make your dairy more convenient with alcNOTES</string>
+    <string name="welcome_message">make your dairy secure and convenient</string>
     <string name="bg">activity_login_bg</string>
     <string name="no_entry">No entry</string>
     <string name="nothing_to_show">Nothing to show</string>
     <string name="get_started_by_adding_notes">get started by adding notes</string>
+    <string name="login_text_alc">ALC</string>
+    <string name="login_text_notes">Notes</string>
+    <string name="login_text_sign_in">Sign In</string>
+    <string name="login_text_for_free">for free</string>
+    <string name="login_text_authenticating">Authenticating &#8230;</string>
 
 </resources>
